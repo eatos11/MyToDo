@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>My Todo App</title>
+        <link rel="stylesheet" href="node_modules/normalize.css/normalize.css">
+        <link rel="stylesheet" href="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.min.css">
+        <link rel="stylesheet" href="css/base.css">
+    </head>
+    <body>
+    <div class="msg">
+        <span class="msg-content"></span>
+        <span  class="confirmed anchor">了解</span>
+    </div>
+    <div class="container"><!--主容器start-->
+        <h1>My To Do</h1>
+        <form class="add-task">
+            <input name="content"
+                   type="text"
+                   placeholder="e.g. 早上记得吃早饭"
+                   autofocus
+                    autocomplete="off"
+            >
+            <button type="submit">submit</button>
+        </form>
+        <div class="tasks-list"><!--清单列表start-->
+            <!--div.task-item{item content $}*10-->
+            <!--<div class="task-item">&lt;!&ndash;任务start&ndash;&gt;
+                <span><input type="checkbox"></span>
+                <span class="task-content">item content 1</span>
+                <span>delete</span>
+                <span>detail</span>
+            </div>&lt;!&ndash;任务end&ndash;&gt;-->
+        </div><!--清单列表end-->
+        <div class="task-detail-mask"></div>
+        <div class="task-detail"><!--任务详情start-->
+        </div><!--任务详情end-->
+    </div><!--主容器end-->
+    <video class="alerter" controls="controls" src="01%20Stay%20.m4a"></video>
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/jquery-datetimepicker/build/jquery.datetimepicker.full.js"></script>
+    <script src="node_modules/store/store.js"></script>
+    <script src="js/base.js"></script>
+    </body>
+</html>
